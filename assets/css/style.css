@@ -1,0 +1,163 @@
+:root {
+   --dark-green: rgb(25, 95, 25);
+   --sage:rgb(141, 190, 132);
+   --brown: rgb(75, 53, 53);
+   --eggshell: rgb(241, 245, 204);
+}
+
+body {
+    color: var(--dark-green);
+    background-color: var(--sage);
+    font-size: 40px;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: start;
+    position: absolute;
+}
+
+a {
+    color: var(--eggshell);
+}
+
+nav .profile-pic{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 300px;
+    border-radius: 10%;
+    margin-right: 20px;
+    margin-left: 40px;
+    border: solid 1px var(--eggshell);
+}
+
+.work-pages img{
+    height: 200px;
+    position: absolute;
+    display: flex;
+    border: solid 1px var(--eggshell);
+    border-radius: 10%;
+}
+
+.work-pages img:hover{
+    opacity: 50%;
+    cursor: pointer;
+    border: solid 3px tomato;
+}
+
+
+header ul {
+    position: relative;
+    margin-left: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: stretch;
+    margin-left: 0px;
+}
+
+header ul li {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+}
+
+header .strong {
+    display: inline;
+    background-color: var(--eggshell);
+    
+    border-radius: 5px;
+    
+}
+
+section {
+    margin-top: 400px;
+    overflow: auto;
+}
+
+.about-me h2,
+.work h2,
+.contact-me h2{
+    text-align: end;
+
+}
+
+
+.about-me,
+.work,
+.contact-me {
+    display: flex;
+    overflow: auto;
+    text-align: center;
+}
+
+.about-me p,
+.work .work-pages,
+.contact-me p {
+    border-left-width: 2px;
+    border-left-style: solid;
+    border-left-color: var(--eggshell);
+    padding-left: 20px;
+    float: right;
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    margin-left: 100px;
+}
+
+.newest-project {
+    display: flex;
+    flex-direction: column ;
+    position: absolute;
+    text-align: center;
+    border-bottom: solid 1px var(--eggshell);
+}
+
+.newest-project h3 {
+    position: relative;
+
+}
+
+.work{
+    margin-right: 20px;
+}
+
+.work-pages{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work-pages .previous-projects {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    height: 400px;
+}
+
+.work-pages a {
+    position: relative;
+}
+
+.col{
+    width:400px;
+    height:400px;
+    text-align:center;
+    padding:5px;
+    margin:2px;
+    display:inline-block;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    body {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
