@@ -41,6 +41,7 @@ nav .profile-pic{
     border-radius: 10%;
 }
 
+
 .work-pages img:hover{
     opacity: 50%;
     cursor: pointer;
@@ -67,9 +68,7 @@ header ul li {
 header .strong {
     display: inline;
     background-color: var(--eggshell);
-    
     border-radius: 5px;
-    
 }
 
 section {
@@ -81,9 +80,9 @@ section {
 .work h2,
 .contact-me h2{
     text-align: end;
+    padding: 20px;
 
 }
-
 
 .about-me,
 .work,
@@ -91,6 +90,7 @@ section {
     display: flex;
     overflow: auto;
     text-align: center;
+    padding: 20px;
 }
 
 .about-me p,
@@ -104,55 +104,51 @@ section {
     display: flex;
     justify-content: end;
     font-size: 30px;
-    margin-left: 100px;
-}
-
-.newest-project {
-    display: flex;
-    flex-direction: column ;
-    position: absolute;
-    text-align: center;
-    border-bottom: solid 1px var(--eggshell);
-}
-
-.newest-project h3 {
-    position: relative;
 
 }
 
-.work{
-    margin-right: 20px;
+.work h2 {
+    height: 1000px
 }
 
 .work-pages{
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
 }
 
-.work-pages .previous-projects {
+.work-pages .previous-projects{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    height: 400px;
 }
 
 .work-pages a {
-    position: relative;
+    position:relative;
 }
 
-.col{
+.col,
+.work-day-scheduler {
     width:400px;
-    height:400px;
+    height:200px;
     text-align:center;
     padding:5px;
     margin:2px;
-    display:inline-block;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-
-
+.work-day-scheduler{
+    width:400px;
+    height:200px;
+    text-align:center;
+    padding:5px;
+    margin:2px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 @media screen and (max-width: 800px) {
