@@ -11,6 +11,12 @@ body {
     font-size: 40px;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        margin-right: 20px;
+    }
+}
+
 nav {
     display: flex;
     align-items: start;
@@ -111,6 +117,10 @@ section {
 
 }
 
+.about-me p {
+    margin-right: 10px;
+}
+
 .work h2 {
     height: 1000px
 }
@@ -168,9 +178,76 @@ section {
     padding: 20px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     body {
         flex: 100%;
         max-width: 100%;
+        margin-right: 100px;
+        font-size: 15px;
+    }
+
+    .work-pages {
+        padding: 20px;
+    }
+
+    .work-day-scheduler img {
+        height: 200px;
+    }
+
+    .newest-project {
+        padding-bottom: 20px;
+    }
+    .previous-projects img {
+        height: 100px;
+        margin-left: 500px;
+    }
+
+    .previous-projects {
+        padding: 20px;
+    }
+
+    .previous-projects a {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 800px){
+    body {
+        flex: 100%;
+        max-width: 100%;
+        margin-right: 0px;
+        font-size: 20px;
+    }
+
+    .work-pages {
+        padding: 20px;
+    }
+
+    .work-day-scheduler img {
+        height: 300px;
+    }
+
+    .newest-project {
+        padding-bottom: 20px;
+    }
+    .previous-projects img {
+        height: 150px;
+        margin-left: 220px;
+    }
+
+    .previous-projects {
+        padding: 20px;
+    }
+
+    .previous-projects a {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    body {
+        margin-right: 240px;
     }
 }
