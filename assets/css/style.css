@@ -9,24 +9,35 @@ body {
     color: var(--dark-green);
     background-color: var(--sage);
     font-size: 40px;
-    margin: 20px;
 }
 
 nav {
     display: flex;
     align-items: start;
-    position: absolute;
+    position:fixed;
+    background: var(--dark-green);
+    width: 1153px;
+    margin: none;
+    opacity: 80%;
+}
+
+nav:hover {
+    opacity: 100%;
 }
 
 a {
     color: var(--eggshell);
+    cursor: pointer;
+}
+a:hover {
+    color: tomato;
 }
 
 nav .profile-pic{
     position: relative;
     display: flex;
     justify-content: flex-end;
-    height: 300px;
+    height: 200px;
     border-radius: 10%;
     margin-right: 20px;
     margin-left: 40px;
@@ -35,17 +46,10 @@ nav .profile-pic{
 
 .work-pages img{
     height: 200px;
-    position: absolute;
     display: flex;
+    margin-right: 20px;
     border: solid 1px var(--eggshell);
     border-radius: 10%;
-}
-
-
-.work-pages img:hover{
-    opacity: 50%;
-    cursor: pointer;
-    border: solid 3px tomato;
 }
 
 
@@ -72,7 +76,6 @@ header .strong {
 }
 
 section {
-    margin-top: 400px;
     overflow: auto;
 }
 
@@ -91,6 +94,7 @@ section {
     overflow: auto;
     text-align: center;
     padding: 20px;
+    margin-top: 200px;
 }
 
 .about-me p,
@@ -111,45 +115,58 @@ section {
     height: 1000px
 }
 
-.work-pages{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
-
 .work-pages .previous-projects{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
+    margin-top: 500px;
+    margin-left: -840px;
 }
 
-.work-pages a {
-    position:relative;
+.col {
+    padding: 40px;
 }
 
-.col,
-.work-day-scheduler {
-    width:400px;
-    height:200px;
-    text-align:center;
-    padding:5px;
-    margin:2px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.work-pages {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.run-buddy, .password-generator {
+    float: left;
+}
+
+.task-master-pro, .taskinator {
+    float: right;
 }
 
 .work-day-scheduler{
-    width:400px;
-    height:200px;
+    height:400px;
     text-align:center;
-    padding:5px;
-    margin:2px;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    padding-bottom: 40px;
+    padding-left: 40px
 }
 
+.work-day-scheduler img {
+    height:400px;
+}
+
+.contact-me {
+    font-size: 20px;
+}
+
+.contact-me h2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me p{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact-me a {
+    padding: 20px;
+}
 
 @media screen and (max-width: 800px) {
     body {
