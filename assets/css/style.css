@@ -103,8 +103,7 @@ section {
     display: flex;
     overflow: auto;
     text-align: center;
-    padding: 20px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .about-me p,
@@ -121,25 +120,18 @@ section {
 
 }
 
+.about-me{
+    margin-top: 250px;
+}
+
 .about-me p {
     margin-right: 10px;
 }
 
-.work h2 {
-    height: 1000px
-}
-
-.work{
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    margin-top: 500px;
-}
 
 .previous-projects{
     display: flex;
-
-    align-items: center;
+    flex-direction: column;
 }
 
 .col {
@@ -153,16 +145,14 @@ section {
 
 
 .newest-project{
-    height:400px;
     text-align:center;
     padding-bottom: 40px;
     display: flex;
 }
 
 .newest-project img {
-    height:400px;
+    height: 400px;
 }
-
 
 .contact-me {
     font-size: 20px;
@@ -192,7 +182,7 @@ section {
         padding: 20px;
     }
 
-    .work-day-scheduler img {
+    .newest-project img {
         height: 200px;
     }
 
@@ -226,7 +216,7 @@ section {
         padding: 20px;
     }
 
-    .work-day-scheduler img {
+    .newest-project img {
         height: 300px;
     }
 
@@ -245,11 +235,5 @@ section {
     .previous-projects a {
         display: flex;
         justify-content: flex-end;
-    }
-}
-
-@media screen and (min-width: 1000px){
-    body {
-        margin-right: 240px;
     }
 }
