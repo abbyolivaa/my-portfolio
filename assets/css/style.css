@@ -130,11 +130,10 @@ section {
     flex-wrap: wrap;
     text-align: center;
     margin-top: 500px;
-    margin-left: -840px;
 }
 
 .col {
-    padding: 40px;
+    padding: 20px;
 }
 
 .work-pages {
@@ -142,19 +141,12 @@ section {
     justify-content: flex-start;
 }
 
-.run-buddy, .password-generator {
-    float: left;
-}
-
-.task-master-pro, .taskinator {
-    float: right;
-}
 
 .work-day-scheduler{
     height:400px;
     text-align:center;
     padding-bottom: 40px;
-    padding-left: 40px
+
 }
 
 .work-day-scheduler img {
